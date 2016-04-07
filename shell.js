@@ -50,19 +50,18 @@ var t = {
 		router.addRoute('/shell/:site/:lang/:banner', t.checkShell);	//accept shortcode and country + 
 		router.addRoute('/*', t.welcome);						//all other urls display default list
 		
-		var port = process.env.PORT || 80;
-		var host = process.env.HOST || 'localhost'; //Change to specific IP if you need to test on mobile devices
+		var port = process.env.PORT || 8080;
+		//var host = process.env.HOST || 'localhost'; //Change to specific IP if you need to test on mobile devices
 		
 		http.createServer(function (req, res) {
 			var path = url.parse(req.url).pathname;
 			var match = router.match(path);
 			match.fn(req, res, match);
 		}).listen({
-			host: host,
 			port: port
 		}, function(e){
 			console.log('e: ' + e);
-			console.log(`Server running on http://${host}:${port}/`);
+			//console.log(`Server running on http://${host}:${port}/`);
 		});
 		
 		
