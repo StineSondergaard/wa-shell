@@ -12,9 +12,9 @@ var router = 	new Router();
 
 // Read the wa site settings file
 var whitealbum = JSON.parse(require('fs').readFileSync('sites.json', 'utf8'));
-var token = JSON.parse(require('fs').readFileSync('token.json', 'utf8'));
+//var token = JSON.parse(require('fs').readFileSync('token.json', 'utf8'));
 //For Heroku:
-//var token = process.env.TOKEN;
+var token = process.env.TOKEN;
 var demoHTML = require('fs').readFileSync('demo.html', 'utf8');
 
 /**
