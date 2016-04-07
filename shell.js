@@ -166,7 +166,7 @@ var t = {
 		var options = {
             url: apiUrl,
 			method: 'GET',
-			headers: { "Authorization": token.basic },
+			headers: { "Authorization": token },
 			qs: { "without_banners": banner },
             json: true
         };
