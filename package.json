@@ -1,0 +1,15 @@
+{
+  "name": "whitealbum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shell.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node shell.js"
+  },
+  "author": "LEC + SS",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.70.0"
+  }
+}

@@ -1,0 +1,119 @@
+{
+	"endpoints": ["external_headers", "categories", "tags","oauth/token/info","/oauth/token","users","users/current"],
+	"sites": [
+		{
+			"name": "M!",
+			"shortname": "MMM",
+			"languages": ["DK"],
+			"domains": ["mmm.dk"]
+		},
+		{
+			"name": "Woman",
+			"shortname": "WOM",
+			"languages": ["DK"],
+			"domains": ["woman.dk"]
+		},
+		{
+			"name": "Stella",
+			"shortname": "STE",
+			"languages": ["NO"],
+			"domains": ["stellamagasinet.no"]
+		},
+		{
+			"name": "Stylista",
+			"shortname": "STY",
+			"languages": ["DK"],
+			"domains": ["stylista.dk"]
+		},
+		{
+			"name": "Bolig Pluss",
+			"shortname": "BOP",
+			"languages": ["NO"],
+			"domains": ["boligpluss.no"]
+		},
+		{
+			"name": "Bilmagasinet",
+			"shortname": "BIL",
+			"languages": ["DK"],
+			"domains": ["bilmagasinet.dk"]
+		},
+		{
+			"name": "Bo Bedre",
+			"shortname": "BOB",
+			"languages": ["DK","NO"],
+			"domains": ["bobedre.dk","bo-bedre.no"]
+		},
+		{
+			"name": "Costume",
+			"shortname": "COS",
+			"languages": ["DK","NO"],
+			"domains": ["costume.dk","costume.no"]
+		},
+		{
+			"name": "Tara",
+			"shortname": "TAR",
+			"languages": ["NO"],
+			"domains": ["tara.no"]
+		},
+		{
+			"name": "Boligmagasinet",
+			"shortname": "BOL",
+			"languages": ["DK"],
+			"domains": ["boligmagasinet.dk"]
+		},
+		{
+			"name": "Penge",
+			"shortname": "PEN",
+			"languages": ["DK"],
+			"domains": ["penge.dk"]
+		},
+		{
+			"name": "Historie",
+			"shortname": "HIS",
+			"languages": ["DK","NO","SE","FI","NL"],
+			"domains": ["historienet.dk","historienet.no","varldenshistoria.se","historianet.fi","historianet.nl"]
+		},
+		{
+			"name": "I Form",
+			"shortname": "IFO",
+			"languages": ["DK","NO","SE","FI"],
+			"domains": ["iform.dk","iform.nu","iform.se","kuntoplus.fi"]
+		},
+		{
+			"name": "Komputer for alle - Staging",
+			"shortname": "KOM",
+			"languages": ["DK","NO","FI","SE"],
+			"domains": ["staging.komputer.dk","staging.komputer.no","staging.kotimikro.fi","staging.pctidningen.se"]
+		},
+		{
+			"name": "Digital Foto - Staging",
+			"shortname": "DIF",
+			"languages": ["DK","NO","FI","SE"],
+			"domains": ["staging.digitalfoto.dk","staging.digital-foto.no","staging.digi-kuva.fi","staging.digitalfotoforalla.se"]
+		},
+		{
+			"name": "Aktiv træning - Staging",
+			"shortname": "ATR",
+			"languages": ["DK","NO","SE"],
+			"domains": ["staging.aktivtraening.dk","staging.aktivtrening.com","staging.aktivtraning.se"]
+		},
+		{
+			"name": "Gør det selv - Staging",
+			"shortname": "GDS",
+			"languages": ["DK","NO","SE","FI"],
+			"domains": ["staging.goerdetselv.dk","staging.gjoerdetselv.com","staging.gds.se","staging.teeitse.com"]
+		},
+		{
+			"name": "National Geographic - Staging",
+			"shortname": "NAT",
+			"languages": ["DK","NO","SE","FI"],
+			"domains": ["staging.natgeo.dk","staging.natgeo.no","staging.natgeo.se","staging.natgeo.fi"]
+		},
+		{
+			"name": "Illustreret Videnskab - Staging",
+			"shortname": "ILL",
+			"languages": ["DK","NO","SE","FI","NL"],
+			"domains": ["staging.illvid.dk","staging.illvit.no","staging.illvet.se","staging.tieku.fi","staging.wibnet.nl"]
+		}
+	]
+}
