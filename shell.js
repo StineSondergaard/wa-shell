@@ -60,8 +60,11 @@ var t = {
 		}).listen({
 			host: host,
 			port: port
+		}, function(e){
+			console.log('e: ' + e);
+			console.log(`Server running on http://${host}:${port}/`);
 		});
-		console.log(`Server running on http://${host}:${port}/`);
+		
 		
 		//open('http://' + ip + ':' + port + '/');
 	},
