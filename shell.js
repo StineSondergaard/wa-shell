@@ -51,17 +51,17 @@ var t = {
 		router.addRoute('/*', t.welcome);						//all other urls display default list
 		
 		var port = process.env.PORT || 80;
-		var ip = process.env.HOST || '127.0.0.1'; //Change to specific IP if you need to test on mobile devices
+		var host = process.env.HOST || 'localhost'; //Change to specific IP if you need to test on mobile devices
 		
 		http.createServer(function (req, res) {
 			var path = url.parse(req.url).pathname;
 			var match = router.match(path);
 			match.fn(req, res, match);
 		}).listen({
-			host: ip,
+			host: host,
 			port: port
 		});
-		console.log(`Server running on http://${ip}:${port}/`);
+		console.log(`Server running on http://${host}:${port}/`);
 		
 		//open('http://' + ip + ':' + port + '/');
 	},
