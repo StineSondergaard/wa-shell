@@ -113,18 +113,56 @@ var t = {
 		var html = `<h1>White Album sites with shell enabled</h1><br><h2>With banners:</h2><ul>`;		
 		for(var s = 0; s < whitealbum.sites.length; s++){
 			
-			html += `<li>${whitealbum.sites[s].name} -`;
+			html += `<li>${whitealbum.sites[s].name}:`;
 			for(var l = 0; l < whitealbum.sites[s].languages.length; l++){
-				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false">${whitealbum.sites[s].languages[l]}</a>&nbsp;`
+				if (whitealbum.sites[s].languages[l] == "DK") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false"><img 
+				src="http://trapp.whitealbum.dk/images/flags/denmark-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "NO") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false"><img 
+				src="http://trapp.whitealbum.dk/images/flags/norway-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "FI") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false"><img 
+				src="http://trapp.whitealbum.dk/images/flags/finland-s.png" style="width:20px;border:0px solid black;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "SE") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false"><img 
+				src="http://trapp.whitealbum.dk/images/flags/sweden-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "NL") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false"><img 
+				src="http://trapp.whitealbum.dk/images/flags/netherlands-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
 			}
 			html += `</li>`
 		}
-		html += `</ul><br><h2>Without banners:</h2>`
+		html += `</ul><br><h2>Without banners:</h2><ul>`
 		for(var s = 0; s < whitealbum.sites.length; s++){
 			
-			html += `<li>${whitealbum.sites[s].name} -`;
+			html += `<li>${whitealbum.sites[s].name} - `;
 			for(var l = 0; l < whitealbum.sites[s].languages.length; l++){
-				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true">${whitealbum.sites[s].languages[l]}</a>&nbsp;`
+				if (whitealbum.sites[s].languages[l] == "DK") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
+				src="http://trapp.whitealbum.dk/images/flags/denmark-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "NO") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
+				src="http://trapp.whitealbum.dk/images/flags/norway-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "FI") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
+				src="http://trapp.whitealbum.dk/images/flags/finland-s.png" style="width:20px;border:0px solid black;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "SE") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
+				src="http://trapp.whitealbum.dk/images/flags/sweden-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
+				else if (whitealbum.sites[s].languages[l] == "NL") {
+				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
+				src="http://trapp.whitealbum.dk/images/flags/netherlands-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
+				}
 			}
 			html += `</li>`
 		}
