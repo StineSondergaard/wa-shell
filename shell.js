@@ -141,7 +141,7 @@ var t = {
 		html += `</ul><br><h2>Without banners:</h2><ul>`
 		for(var s = 0; s < whitealbum.sites.length; s++){
 			
-			html += `<li>${whitealbum.sites[s].name} - `;
+			html += `<li>${whitealbum.sites[s].name}:`;
 			for(var l = 0; l < whitealbum.sites[s].languages.length; l++){
 				if (whitealbum.sites[s].languages[l] == "DK") {
 				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
