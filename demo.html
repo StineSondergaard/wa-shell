@@ -8,117 +8,126 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>-->
-
-<ul class="nav nav-tabs">
-	<li class="active"><a data-toggle="tab" href="#wg">Widget groups</a></li>
-	<li><a data-toggle="tab" href="#widgets">Widgets</a></li>
-	<li><a data-toggle="tab" href="#styles">Styles</a></li>
-	<li><a data-toggle="tab" href="#article">Article</a></li>
-	<li><a data-toggle="tab" href="#gallery">Gallery</a></li>
-	<li><a data-toggle="tab" href="#rest">Bootstrap</a></li>
-</ul>
-
-<div class="tab-content">
-	<!-- *****WIDGET GROUPS AND WIDGETS***** -->
-	<div id="wg" class="tab-pane fade in active">
-		<div class="page-header">
-			<h1>Widget groups:</h1>
-		</div>
-		<h2>wg-editorial</h2>
-		<div class="widget wg-editorial">
-			<h3>Editorial h3</h3>
-			<p>An editorial layout can be seen here. This is the most used widget group.</p>
-		</div>
-
-		<br>
-
-		<h2>themebox</h2>
-		<div class="widget themebox">
-			<h3>Themebox h3</h3>
-			<p>A themebox layout can be seen here.</p>
-		</div>
-
-		<br>
-
-		<h2>wg-transparent-bg</h2>
-		<div class="widget wg-transparent-bg">
-			<h3>Transparent h3</h3>
-			<p>A transparent layout can be seen here.</p>
-		</div>
-
-		<br>
-
-		<h2>wg-editorial stick-to-next</h2>
-		<div class= "widget wg-editorial stick-to-next">
-			<p>This is an editorial widget group that sticks to...</p>
-		</div>
-
-		<div class="widget wg-editorial">
-			<p>... the next editorial widget group.</p>
-		</div>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#wg">Widget groups</a></li>
+			<li><a data-toggle="tab" href="#widgets">Widgets</a></li>
+			<li><a data-toggle="tab" href="#styles">Styles</a></li>
+			<li><a data-toggle="tab" href="#article">Article</a></li>
+			<li><a data-toggle="tab" href="#gallery">Gallery</a></li>
+			<!--<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a data-toggle="tab" href="#">Horizontal</a></li>
+					<li><a data-toggle="tab" href="#">Horizontal 1</a></li>
+					<li><a data-toggle="tab" href="#vertical">Vertical</a></li> 
+				</ul>
+			</li>-->
+			<li><a data-toggle="tab" href="#rest">Bootstrap</a></li>
+		</ul>
 	</div>
 
-	<!-- *****Widgets***** -->	
-	<div id="widgets" class="tab-pane fade">
-		<h1>Widgets</h1>
+	<div class="tab-content">
 
-		<h3>Editorial - rotator</h3>
-		<div class="widget wg-editorial"><div class="row">
-			<div class="col-sm-12">
-				<div class="row">
-					<div class="col-md-8">
-						<div class="rotator-standard" data-toggle="rotator" data-custom-nav="rotator-custom-nav">
-							<ul>
-								<li><a data-transition-link="true" href="#" title="This is a test title #1!">
-									<figure>
-										<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/istock_000082034429_small-F6KxAPUAIQRDm8sqdZP_6Q.jpg?auto=format&ixjsv=1.0.24&rect=0%2C21%2C802%2C556&w=280" disable_imgix="true" src="http://bonnier.imgix.net/istock_000082034429_small-F6KxAPUAIQRDm8sqdZP_6Q.jpg?auto=format&ixjsv=1.0.24&rect=0%2C21%2C802%2C556&w=280" title="" />
-										<figcaption>
-											<div class="caption-inner full-width">
-												<h2 class="h1">
-													This is a test title #1!
-												</h2>
-												<div class="clearfix"></div>
-												<h3 class="h2 hidden-xs">
-													It is a sub title for #1...
-												</h3>
-											</div>
-										</figcaption>
-									</figure>
-								</a></li>
-								<li><a data-transition-link="true" href="#" title="This is a test title #2! It is slightly longer.">
-									<figure>
-										<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/bbm-z06_8-6f8ilhmmqjz5ejudl6grkg-suukiutxjx54zduzgewvna-7ux34woEmUvK9UeR-DOxGQ.jpg?auto=format&ixjsv=1.0.24&rect=111%2C0%2C5777%2C4000&w=210" disable_imgix="true" src="http://bonnier.imgix.net/bbm-z06_8-6f8ilhmmqjz5ejudl6grkg-suukiutxjx54zduzgewvna-7ux34woEmUvK9UeR-DOxGQ.jpg?auto=format&ixjsv=1.0.24&rect=111%2C0%2C5777%2C4000&w=210" title="" />
-										<figcaption>
-											<div class="caption-inner full-width">
-												<h2 class="h1">
-													This is a test title #2! It is slightly longer.
-												</h2>
-												<div class="clearfix"></div>
-												<h3 class="h2 hidden-xs">
-													But still holds a sub title as support. 
-												</h3>
-											</div>
-										</figcaption>
-									</figure>
-								</a></li>
-								<li><a data-transition-link="true" href="#" title="Test number 3 is even longer than the second. This is to illustrate the different appearences.">
-									<figure>
-										<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/lyngby-vase-miljo-FIUPdu23R5FgsppOlOUUZA.jpg?auto=format&ixjsv=1.0.24&rect=0%2C72%2C2500%2C1730&w=450" disable_imgix="true" src="http://bonnier.imgix.net/lyngby-vase-miljo-FIUPdu23R5FgsppOlOUUZA.jpg?auto=format&ixjsv=1.0.24&rect=0%2C72%2C2500%2C1730&w=450" title="" />
-										<figcaption>
-											<div class="caption-inner full-width">
-												<h2 class="h1">
-													Test number 3 is even longer than the second. This is to illustrate the different appearences.
-												</h2>
-												<div class="clearfix"></div>
-												<h3 class="h2 hidden-xs">
-													It looks so nice!
-												</h3>
-											</div>
-										</figcaption>
-									</figure>
-								</a></li>
-								<li>
-									<a data-transition-link="true" href="#" title="May the #4 be with you!">
+		<!-- *****WIDGET GROUPS AND WIDGETS***** -->
+		<div id="wg" class="tab-pane fade in active">
+			<div class="page-header">
+				<h1>Widget groups:</h1>
+			</div>
+			<h2>wg-editorial</h2>
+			<div class="widget wg-editorial">
+				<h3>Editorial h3</h3>
+				<p>An editorial layout can be seen here. This is the most used widget group.</p>
+			</div>
+
+			<br>
+
+			<h2>themebox</h2>
+			<div class="widget themebox">
+				<h3>Themebox h3</h3>
+				<p>A themebox layout can be seen here.</p>
+			</div>
+
+			<br>
+
+			<h2>wg-transparent-bg</h2>
+			<div class="widget wg-transparent-bg">
+				<h3>Transparent h3</h3>
+				<p>A transparent layout can be seen here.</p>
+			</div>
+
+			<br>
+
+			<h2>wg-editorial stick-to-next</h2>
+			<div class= "widget wg-editorial stick-to-next">
+				<p>This is an editorial widget group that sticks to...</p>
+			</div>
+
+			<div class="widget wg-editorial">
+				<p>... the next editorial widget group.</p>
+			</div>
+		</div>
+
+		<!-- *****Widgets***** -->	
+		<div id="widgets" class="tab-pane fade">
+			<h1>Widgets</h1>
+
+			<h3>Editorial - rotator</h3>
+			<div class="widget wg-editorial"><div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="rotator-standard" data-toggle="rotator" data-custom-nav="rotator-custom-nav">
+								<ul>
+									<li><a data-transition-link="true" href="#" title="This is a test title #1!">
+										<figure>
+											<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/istock_000082034429_small-F6KxAPUAIQRDm8sqdZP_6Q.jpg?auto=format&ixjsv=1.0.24&rect=0%2C21%2C802%2C556&w=280" disable_imgix="true" src="http://bonnier.imgix.net/istock_000082034429_small-F6KxAPUAIQRDm8sqdZP_6Q.jpg?auto=format&ixjsv=1.0.24&rect=0%2C21%2C802%2C556&w=280" title="" />
+											<figcaption>
+												<div class="caption-inner full-width">
+													<h2 class="h1">
+														This is a test title #1!
+													</h2>
+													<div class="clearfix"></div>
+													<h3 class="h2 hidden-xs">
+														It is a sub title for #1...
+													</h3>
+												</div>
+											</figcaption>
+										</figure>
+									</a></li>
+									<li><a data-transition-link="true" href="#" title="This is a test title #2! It is slightly longer.">
+										<figure>
+											<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/bbm-z06_8-6f8ilhmmqjz5ejudl6grkg-suukiutxjx54zduzgewvna-7ux34woEmUvK9UeR-DOxGQ.jpg?auto=format&ixjsv=1.0.24&rect=111%2C0%2C5777%2C4000&w=210" disable_imgix="true" src="http://bonnier.imgix.net/bbm-z06_8-6f8ilhmmqjz5ejudl6grkg-suukiutxjx54zduzgewvna-7ux34woEmUvK9UeR-DOxGQ.jpg?auto=format&ixjsv=1.0.24&rect=111%2C0%2C5777%2C4000&w=210" title="" />
+											<figcaption>
+												<div class="caption-inner full-width">
+													<h2 class="h1">
+														This is a test title #2! It is slightly longer.
+													</h2>
+													<div class="clearfix"></div>
+													<h3 class="h2 hidden-xs">
+														But still holds a sub title as support. 
+													</h3>
+												</div>
+											</figcaption>
+										</figure>
+									</a></li>
+									<li><a data-transition-link="true" href="#" title="Test number 3 is even longer than the second. This is to illustrate the different appearences.">
+										<figure>
+											<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/lyngby-vase-miljo-FIUPdu23R5FgsppOlOUUZA.jpg?auto=format&ixjsv=1.0.24&rect=0%2C72%2C2500%2C1730&w=450" disable_imgix="true" src="http://bonnier.imgix.net/lyngby-vase-miljo-FIUPdu23R5FgsppOlOUUZA.jpg?auto=format&ixjsv=1.0.24&rect=0%2C72%2C2500%2C1730&w=450" title="" />
+											<figcaption>
+												<div class="caption-inner full-width">
+													<h2 class="h1">
+														Test number 3 is even longer than the second. This is to illustrate the different appearences.
+													</h2>
+													<div class="clearfix"></div>
+													<h3 class="h2 hidden-xs">
+														It looks so nice!
+													</h3>
+												</div>
+											</figcaption>
+										</figure>
+									</a></li>
+									<li><a data-transition-link="true" href="#" title="May the #4 be with you!">
 										<figure>
 											<img alt="" class=" aspect-tv" data-src="http://bonnier.imgix.net/hygge-belysning-costume-1i0JfN5WZDkM1dyLkZpmlQ.jpg?auto=format&ixjsv=1.0.24&rect=0%2C0%2C960%2C665&w=450" disable_imgix="true" src="http://bonnier.imgix.net/hygge-belysning-costume-1i0JfN5WZDkM1dyLkZpmlQ.jpg?auto=format&ixjsv=1.0.24&rect=0%2C0%2C960%2C665&w=450" title="" />
 											<figcaption>
@@ -342,367 +351,695 @@
 											<input class="form-control" id="email" name="email" placeholder="E-mail" type="text" value="" />
 										</div>
 										<button class="btn btn-primary newsletter-signup gtm-newsletter-signup" name="button" type="submit">Tilmeld</button>
-									</form>  </div>
+									</form>  
 								</div>
-								<div class="clearfix"></div>
 							</div>
-							<div class="col-sm-4">
-								<div class="standard mobile-rows">
-									<article class="article-item full-width">
-										<a class="full-width inline-block" data-transition-link="true" href="#" title="Empty1">
-											<div class="relative">
-												<div class="content-label-widget">
-												</div>
-												<img alt="" class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/pinlig1-lGVE2fSPllmU4NGrDwreOQ.jpg?auto=format&amp;rect=0%2C2%2C3256%2C2254" src="http://bonnier.imgix.net/istock_000069393141_large-wUmPNg--iujf1yZc8XpQMA.jpg?auto=format&ixjsv=1.0.24&rect=49%2C0%2C2615%2C1811&w=610" title="" />
+							<div class="clearfix"></div>
+						</div>
+						<div class="col-sm-4">
+							<div class="standard mobile-rows">
+								<article class="article-item full-width">
+									<a class="full-width inline-block" data-transition-link="true" href="#" title="Empty1">
+										<div class="relative">
+											<div class="content-label-widget">
 											</div>
-											<header class="article-description">
-												<h2 class="h1 gutter-vertical-reset">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-													<i class="fa fa-caret-right bp-hide link-arrow"></i>
-												</h2>
-												<p class="text">
-													Cras varius placerat viverra. Donec sodales non est non dignissim. Fusce porttitor mattis scelerisque.
-												</p>
-											</header>
-										</a>  
-									</article>
-								</div>
-								<div class="clearfix"></div>
+											<img alt="" class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/pinlig1-lGVE2fSPllmU4NGrDwreOQ.jpg?auto=format&amp;rect=0%2C2%2C3256%2C2254" src="http://bonnier.imgix.net/istock_000069393141_large-wUmPNg--iujf1yZc8XpQMA.jpg?auto=format&ixjsv=1.0.24&rect=49%2C0%2C2615%2C1811&w=610" title="" />
+										</div>
+										<header class="article-description">
+											<h2 class="h1 gutter-vertical-reset">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												<i class="fa fa-caret-right bp-hide link-arrow"></i>
+											</h2>
+											<p class="text">
+												Cras varius placerat viverra. Donec sodales non est non dignissim. Fusce porttitor mattis scelerisque.
+											</p>
+										</header>
+									</a>  
+								</article>
 							</div>
-							<div class="col-sm-4">
-								<div class="linklist">
-									<article class="article-item">
-										<ul>
-											<li>
-												<div class="content-label-widget">
-												</div>
-												<a href="#">Lorem ipsum dolor sit amet</a>
-											</li>
-										</ul>
-									</article>
-								</div>
-								<div class="linklist">
-									<article class="article-item">
-										<ul>
-											<li>
-												<div class="content-label-widget">
-												</div>
-												<a href="#">Lorem ipsum dolor sit amet</a>
-											</li>
-										</ul>
-									</article>
-								</div>
-								<div class="linklist">
-									<article class="article-item">
-										<ul>
-											<li>
-												<div class="content-label-widget">
-												</div>
-												<a href="#">Lorem ipsum dolor sit amet</a>
-											</li>
-										</ul>
-									</article>
-								</div>
-								<div class="linklist">
-									<article class="article-item">
-										<ul>
-											<li>
-												<div class="content-label-widget">
-												</div>
-												<a href="#">Lorem ipsum dolor sit amet</a>
-											</li>
-										</ul>
-									</article>
-								</div>
-								<div class="linklist">
-									<article class="article-item">
-										<ul>
-											<li>
-												<div class="content-label-widget">
-												</div>
-												<a href="#">Lorem ipsum dolor sit amet</a>
-											</li>
-										</ul>
-									</article>
-								</div>
-								<div class="linklist">
-									<article class="article-item">
-										<ul>
-											<li>
-												<div class="content-label-widget">
-												</div>
-												<a href="#">Lorem ipsum dolor sit amet</a>
-											</li>
-										</ul>
-									</article>
-								</div>
-								<div class="clearfix"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="col-sm-4">
+							<div class="linklist">
+								<article class="article-item">
+									<ul>
+										<li>
+											<div class="content-label-widget">
+											</div>
+											<a href="#">Lorem ipsum dolor sit amet</a>
+										</li>
+									</ul>
+								</article>
 							</div>
+							<div class="linklist">
+								<article class="article-item">
+									<ul>
+										<li>
+											<div class="content-label-widget">
+											</div>
+											<a href="#">Lorem ipsum dolor sit amet</a>
+										</li>
+									</ul>
+								</article>
+							</div>
+							<div class="linklist">
+								<article class="article-item">
+									<ul>
+										<li>
+											<div class="content-label-widget">
+											</div>
+											<a href="#">Lorem ipsum dolor sit amet</a>
+										</li>
+									</ul>
+								</article>
+							</div>
+							<div class="linklist">
+								<article class="article-item">
+									<ul>
+										<li>
+											<div class="content-label-widget">
+											</div>
+											<a href="#">Lorem ipsum dolor sit amet</a>
+										</li>
+									</ul>
+								</article>
+							</div>
+							<div class="linklist">
+								<article class="article-item">
+									<ul>
+										<li>
+											<div class="content-label-widget">
+											</div>
+											<a href="#">Lorem ipsum dolor sit amet</a>
+										</li>
+									</ul>
+								</article>
+							</div>
+							<div class="linklist">
+								<article class="article-item">
+									<ul>
+										<li>
+											<div class="content-label-widget">
+											</div>
+											<a href="#">Lorem ipsum dolor sit amet</a>
+										</li>
+									</ul>
+								</article>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- *****STYLES***** -->	
+			<div id="styles" class="tab-pane fade">
+
+				<h1>Styles</h1>
+				<div class="widget wg-editorial">
+					<div class="row">
+
+						<div class="col-sm-4">
+							<div class="page-header">
+								<h3>Type sizes</h3>
+							</div>
+							<h1>H1</h1>
+							<h2>H2</h2>
+							<h3>H3</h3>
+							<h4>H4</h4>
+							<h5>H5</h5>
+							<h6>H6</h6>
+						</div>
+
+						<div class="col-sm-8">
+							<div class="page-header">
+								<h3>Buttons</h3>
+							</div>
+							<p> <b>Colours:</b> <br>
+								<button type="button" class="btn btn-lg btn-default">Default</button>
+								<button type="button" class="btn btn-lg btn-primary">Primary</button>
+								<button type="button" class="btn btn-lg btn-success">Success</button>
+								<button type="button" class="btn btn-lg btn-info">Info</button>
+								<button type="button" class="btn btn-lg btn-warning">Warning</button>
+								<button type="button" class="btn btn-lg btn-danger">Danger</button>
+								<button type="button" class="btn btn-lg btn-link">Link</button>
+							</p>
+							<p><em>Primary</em> is the most used colour, but the entire colour scheme can be seen on the buttons along with the link colour.</p>
+							<hr>
+							<p> <b>Sizes:</b><br>
+								<button type="button" class="btn btn-lg btn-primary">Large</button>
+								<button type="button" class="btn btn-primary">Normal</button>
+								<button type="button" class="btn btn-sm btn-primary">Small</button>
+								<button type="button" class="btn btn-xs btn-primary">Extra Small</button>
+							</p>
+						</div>
+					</div>		
+				</div>
+			</div>
+
+			<!-- *****ARTICLE***** -->
+			<div id="article" class="tab-pane fade">
+
+				<h2>Article</h2>
+				<div class="segment-article">
+
+					<div class="row">
+						<div class="col-md-12 article-lead">
+							<figure class="wrapper row">
+								<div class="bounding-box">
+									<div class="corner-label">
+									</div>
+									<img class="img-responsive full-width aspect-tv imgix-fluid" data-pinterest="include" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" title="" />
+								</div>
+							</figure>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="lead-image-caption">
+								<div class="image-caption"></div>
+							</div>
+
+							<header class="article-header">
+								<h1 class="h1 gutter-top gutter-bottom content-header">
+									Title on the article
+								</h1>
+								<h2 class="h4 gutter-reset content-subheader">
+									Here you can write the sub title for the article...
+								</h2>
+
+								<div class="gutter-vertical">
+									<div class="meta-information">
+										dd. month yyyy by 'full name of author'
+										<span data-content-author="Sara Møller Christensen" data-content-date="12. april 2015" data-meta-information="true"></span>
+										<div class="top-tags">
+											<a class="tag-link" href="#">#hashtag</a>
+											<a class="tag-link" href="#">#hashtag</a>
+											<a class="tag-link" href="#">#hashtag</a>
+										</div>
+										<div class="inline-block hidden-xs-sm pull-right comment-count">
+											<a href="#comments">
+												<i class="fa fa-comments gutter-left"></i>
+												<span data-target="comments-counter"></span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</header>
 						</div>
 					</div>
 				</div>
 
-				<!-- *****STYLES***** -->	
-				<div id="styles" class="tab-pane fade">
-
-					<h1>Styles</h1>
-					<div class="widget wg-editorial">
-						<div class="row">
-
-							<div class="col-sm-4">
-								<div class="page-header">
-									<h3>Type sizes</h3>
-								</div>
-								<h1>H1</h1>
-								<h2>H2</h2>
-								<h3>H3</h3>
-								<h4>H4</h4>
-								<h5>H5</h5>
-								<h6>H6</h6>
-							</div>
-
-
-							<div class="col-sm-8">
-								<div class="page-header">
-									<h3>Buttons</h3>
-								</div>
-								<p> Colours: <br>
-									<button type="button" class="btn btn-lg btn-default">Default</button>
-									<button type="button" class="btn btn-lg btn-primary">Primary</button>
-									<button type="button" class="btn btn-lg btn-success">Success</button>
-									<button type="button" class="btn btn-lg btn-info">Info</button>
-									<button type="button" class="btn btn-lg btn-warning">Warning</button>
-									<button type="button" class="btn btn-lg btn-danger">Danger</button>
-									<button type="button" class="btn btn-lg btn-link">Link</button>
-								</p>
-								<p><b>Primary</b> is the most used colour, but the entire colour scheme can be seen on the buttons along with the link colour.</p>
-								<hr>
-								<p> Sizes:<br>
-									<button type="button" class="btn btn-lg btn-primary">Large</button>
-									<button type="button" class="btn btn-primary">Normal</button>
-									<button type="button" class="btn btn-sm btn-primary">Small</button>
-									<button type="button" class="btn btn-xs btn-primary">Extra Small</button>
-								</p>
-							</div>
-						</div>		
-					</div>
-				</div>
-
-				<!-- *****ARTICLE***** -->
-				<div id="article" class="tab-pane fade">
-
-					<h2>Article</h2>
-					<div class="segment-article">
-
-						<div class="row">
-							<div class="col-md-12 article-lead">
-								<figure class="wrapper row">
-									<div class="bounding-box">
-										<div class="corner-label">
-										</div>
-										<img class="img-responsive full-width aspect-tv imgix-fluid" data-pinterest="include" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" title="" />
+				<div class="segment-article">
+					<article data-js="page-content" class="article-content gutter-bottom">
+						<div class="wg-article">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="continue-reading" data-continue-reading>
+										Indholdet fortsætter efter annoncen
+									</p>
+									<div class="visible-md-lg banner-wrapper" data-banner-md-lg>
 									</div>
-								</figure>
+									<div class="visible-sm banner-wrapper" data-banner-sm>
+									</div>
+									<div class="visible-xs banner-wrapper" data-banner-xs>
+										<div class="banner-min-height banner gtm-banner" data-banner-code="40491" data-banner-target="true"></div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
 							</div>
 						</div>
-
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2">
-								<div class="lead-image-caption">
-									<div class="image-caption">
-									</div>
-								</div>
-
-								<header class="article-header">
-									<h1 class="h1 gutter-top gutter-bottom content-header">
-										Title on the article
-									</h1>
-									<h2 class="h4 gutter-reset content-subheader">
-										Here you can write the sub title for the article...
-									</h2>
-
-									<div class="gutter-vertical">
-										<div class="meta-information">
-											dd. month yyyy by 'full name of author'
-											<span data-content-author="Sara Møller Christensen" data-content-date="12. april 2015" data-meta-information="true"></span>
-											<div class="top-tags">
-												<a class="tag-link" href="#">#hashtag</a>
-												<a class="tag-link" href="#">#hashtag</a>
-												<a class="tag-link" href="#">#hashtag</a>
-											</div>
-											<div class="inline-block hidden-xs-sm pull-right comment-count">
-												<a href="#comments">
-													<i class="fa fa-comments gutter-left"></i>
-													<span data-target="comments-counter"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</header>
-							</div>
-						</div>
-					</div>
-
-					<div class="segment-article">
-						<article data-js="page-content" class="article-content gutter-bottom">
-							<div class="wg-article">
-								<div class="row">
-									<div class="col-md-12">
-										<p class="continue-reading" data-continue-reading>
-											Indholdet fortsætter efter annoncen
-										</p>
-										<div class="visible-md-lg banner-wrapper" data-banner-md-lg>
-										</div>
-										<div class="visible-sm banner-wrapper" data-banner-sm>
-										</div>
-										<div class="visible-xs banner-wrapper" data-banner-xs>
-											<div class="banner-min-height banner gtm-banner" data-banner-code="40491" data-banner-target="true"></div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wg-article">
-								<div class="row">
-									<div class="col-md-8 col-md-offset-2">
-										<div class="wysiwyg cXenseParse text-widget">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius placerat viverra. Donec sodales non est non dignissim. Fusce porttitor mattis scelerisque. Praesent venenatis vitae libero eleifend interdum. Vivamus imperdiet velit elit, eget interdum lorem rutrum ac. Nunc nec bibendum diam, vitae lacinia massa. Donec ut ante vitae diam accumsan egestas nec quis dolor. Sed et finibus sapien. Pellentesque nisi libero, iaculis sed blandit id, semper et nunc. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis dignissim, augue eu volutpat molestie, lectus purus interdum velit, nec ultrices nunc mauris quis eros. Cras vitae quam nunc. Donec in placerat quam. Proin ut nisl erat. Cras vel diam nunc.</p>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="wg-article">
-								<div class="row">
-									<div class="col-md-12">
-										<p class="continue-reading" data-continue-reading>
-											Indholdet fortsætter efter annoncen
-										</p>
-										<div class="visible-md-lg banner-wrapper" data-banner-md-lg>
-											<div class="banner-min-height banner gtm-banner" data-banner-code="37208" data-banner-target="true"></div>
-										</div>
-										<div class="visible-sm banner-wrapper" data-banner-sm>
-											<div class="banner-min-height banner gtm-banner" data-banner-code="37223" data-banner-target="true"></div>
-										</div>
-										<div class="visible-xs banner-wrapper" data-banner-xs>
-											<div class="banner-min-height banner gtm-banner" data-banner-code="37193" data-banner-target="true"></div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wg-article"><div class="row">
+						<div class="wg-article">
+							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="wysiwyg cXenseParse text-widget">
-										<p>Fusce varius orci nunc, in pretium lacus accumsan at. Nulla vitae lorem non tortor dignissim vestibulum id sed ipsum. In aliquet rutrum posuere. Morbi viverra suscipit sagittis. Nulla suscipit nisl felis, id malesuada lorem volutpat sit amet. Duis eget felis quis urna bibendum malesuada placerat a ipsum. Integer sit amet lobortis massa. Sed dignissim purus nisl, et vulputate ante consectetur quis.</p>
-										<p><strong>Aliquam metus mi</strong>, condimentum at tempus non, blandit in ipsum. Aenean consectetur hendrerit dapibus. Nam vitae efficitur magna. Suspendisse potenti. Duis ornare iaculis dapibus. Vivamus sodales quam ac mi scelerisque tempus. Donec ullamcorper lorem at dolor pulvinar malesuada vel eu lectus.</p>
-										<p><a href="#" rel="none" target="blank">Test link that shows how a link looks like in an article!<br/></a></p>
-										<p>Vivamus vulputate aliquam imperdiet. Mauris dictum ex at ipsum ornare sodales. Suspendisse accumsan magna quis lacus egestas, et fermentum urna mollis. Sed varius egestas arcu tempor mollis. Vivamus dictum ac lacus sed fermentum. Morbi aliquam arcu et erat sollicitudin egestas. Aliquam erat volutpat. Praesent sit amet felis vel tortor laoreet mollis et auctor elit.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius placerat viverra. Donec sodales non est non dignissim. Fusce porttitor mattis scelerisque. Praesent venenatis vitae libero eleifend interdum. Vivamus imperdiet velit elit, eget interdum lorem rutrum ac. Nunc nec bibendum diam, vitae lacinia massa. Donec ut ante vitae diam accumsan egestas nec quis dolor. Sed et finibus sapien. Pellentesque nisi libero, iaculis sed blandit id, semper et nunc. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis dignissim, augue eu volutpat molestie, lectus purus interdum velit, nec ultrices nunc mauris quis eros. Cras vitae quam nunc. Donec in placerat quam. Proin ut nisl erat. Cras vel diam nunc.</p>
 									</div>
 									<div class="clearfix"></div>
 								</div>
-							</div></div>
-
-							<div class="wg-article"><div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									<div class="related-content-widget gutter-bottom-lg">
-										<div class="widget-title row">
-											<h3>Relateret Indhold</h3>
-										</div>
-										<div class="col-sm-4">
-											<div class="standard mobile-rows">
-												<div class="article-labels">
-													<span class="category-label">
-														<a href="#/underholdning/underholdning">Category</a>
-													</span>
-												</div>
-												<article class="article-item">
-													<a href="#/underholdning/8-high-school-film-du-skal-se" title="8 high school-film, du skal se">
-														<div class="relative">
-															<div class="content-label-widget"></div>
-															<img class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" />
-														</div>
-														<header class="article-description">
-															<h2 class="h1 gutter-vertical-reset">
-																Some title of article
-																<i class="fa fa-caret-right bp-hide link-arrow"></i>
-															</h2>
-														</header>
-													</a>        
-												</article>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="standard mobile-rows">
-												<div class="article-labels">
-													<span class="category-label">
-														<a href="#/underholdning/dit-liv">Sub category</a>
-													</span>
-												</div>
-												<article class="article-item">
-													<a href="#/dit-liv/16-totalt-sprode-plakater-du-havde-pa-teenagevaerelset" title="16 totalt sprøde plakater, du havde på teenageværelset">
-														<div class="relative">
-															<div class="content-label-widget">
-															</div>
-															<img class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" title="" />
-														</div>
-														<header class="article-description">
-															<h2 class="h1 gutter-vertical-reset">
-																Some title of gallery
-																<i class="fa fa-caret-right bp-hide link-arrow"></i>
-															</h2>
-														</header>
-													</a>        
-												</article>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="standard mobile-rows">
-												<div class="article-labels">
-													<span class="category-label">
-														<a href="#/underholdning/underholdning">Category</a>
-													</span>
-												</div>
-												<article class="article-item">
-													<a href="#/underholdning/ny-film-afslorer-backstage-dramaet-fra-beverly-hills-90210" title="Ny film afslører backstage-dramaet fra Beverly Hills 90210">
-														<div class="relative">
-															<div class="content-label-widget">
-															</div>
-															<img class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" title="" />
-														</div>
-														<header class="article-description">
-															<h2 class="h1 gutter-vertical-reset">
-																Some title of article
-																<i class="fa fa-caret-right bp-hide link-arrow"></i>
-															</h2>
-														</header>
-													</a>        
-												</article>
-											</div>
-										</div>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div></div>
-						</article>
-					</div>
-
-					<div class="article-footer">
-						<div class="row">
-							<div class="gutter-vertical text-tiny col-md-8 col-md-offset-2 bottom-tags">
-								<a class="tag-link" href="#">#hashtag</a>
-								<a class="tag-link" href="#">#hashtag</a>
-								<a class="tag-link" href="#">#hashtag</a>
 							</div>
 						</div>
-					</div>
 
+						<div class="wg-article">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="continue-reading" data-continue-reading>
+										Indholdet fortsætter efter annoncen
+									</p>
+									<div class="visible-md-lg banner-wrapper" data-banner-md-lg>
+										<div class="banner-min-height banner gtm-banner" data-banner-code="37208" data-banner-target="true"></div>
+									</div>
+									<div class="visible-sm banner-wrapper" data-banner-sm>
+										<div class="banner-min-height banner gtm-banner" data-banner-code="37223" data-banner-target="true"></div>
+									</div>
+									<div class="visible-xs banner-wrapper" data-banner-xs>
+										<div class="banner-min-height banner gtm-banner" data-banner-code="37193" data-banner-target="true"></div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+						<div class="wg-article"><div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="wysiwyg cXenseParse text-widget">
+									<p>Fusce varius orci nunc, in pretium lacus accumsan at. Nulla vitae lorem non tortor dignissim vestibulum id sed ipsum. In aliquet rutrum posuere. Morbi viverra suscipit sagittis. Nulla suscipit nisl felis, id malesuada lorem volutpat sit amet. Duis eget felis quis urna bibendum malesuada placerat a ipsum. Integer sit amet lobortis massa. Sed dignissim purus nisl, et vulputate ante consectetur quis.</p>
+									<p><strong>Aliquam metus mi</strong>, condimentum at tempus non, blandit in ipsum. Aenean consectetur hendrerit dapibus. Nam vitae efficitur magna. Suspendisse potenti. Duis ornare iaculis dapibus. Vivamus sodales quam ac mi scelerisque tempus. Donec ullamcorper lorem at dolor pulvinar malesuada vel eu lectus.</p>
+									<p><a href="#" rel="none" target="blank">Test link that shows how a link looks like in an article!<br/></a></p>
+									<p>Vivamus vulputate aliquam imperdiet. Mauris dictum ex at ipsum ornare sodales. Suspendisse accumsan magna quis lacus egestas, et fermentum urna mollis. Sed varius egestas arcu tempor mollis. Vivamus dictum ac lacus sed fermentum. Morbi aliquam arcu et erat sollicitudin egestas. Aliquam erat volutpat. Praesent sit amet felis vel tortor laoreet mollis et auctor elit.</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div></div>
+
+						<div class="wg-article"><div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="related-content-widget gutter-bottom-lg">
+									<div class="widget-title row">
+										<h3>Relateret Indhold</h3>
+									</div>
+									<div class="col-sm-4">
+										<div class="standard mobile-rows">
+											<div class="article-labels">
+												<span class="category-label">
+													<a href="#/underholdning/underholdning">Category</a>
+												</span>
+											</div>
+											<article class="article-item">
+												<a href="#/underholdning/8-high-school-film-du-skal-se" title="8 high school-film, du skal se">
+													<div class="relative">
+														<div class="content-label-widget"></div>
+														<img class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" />
+													</div>
+													<header class="article-description">
+														<h2 class="h1 gutter-vertical-reset">
+															Some title of article
+															<i class="fa fa-caret-right bp-hide link-arrow"></i>
+														</h2>
+													</header>
+												</a>        
+											</article>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="standard mobile-rows">
+											<div class="article-labels">
+												<span class="category-label">
+													<a href="#/underholdning/dit-liv">Sub category</a>
+												</span>
+											</div>
+											<article class="article-item">
+												<a href="#/dit-liv/16-totalt-sprode-plakater-du-havde-pa-teenagevaerelset" title="16 totalt sprøde plakater, du havde på teenageværelset">
+													<div class="relative">
+														<div class="content-label-widget">
+														</div>
+														<img class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" title="" />
+													</div>
+													<header class="article-description">
+														<h2 class="h1 gutter-vertical-reset">
+															Some title of gallery
+															<i class="fa fa-caret-right bp-hide link-arrow"></i>
+														</h2>
+													</header>
+												</a>        
+											</article>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="standard mobile-rows">
+											<div class="article-labels">
+												<span class="category-label">
+													<a href="#/underholdning/underholdning">Category</a>
+												</span>
+											</div>
+											<article class="article-item">
+												<a href="#/underholdning/ny-film-afslorer-backstage-dramaet-fra-beverly-hills-90210" title="Ny film afslører backstage-dramaet fra Beverly Hills 90210">
+													<div class="relative">
+														<div class="content-label-widget">
+														</div>
+														<img class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" src="http://bonnier.imgix.net/historie-lead-image-fallback.png?auto=format&ixjsv=1.0.24&rect=0%2C33%2C1152%2C797&w=290" title="" />
+													</div>
+													<header class="article-description">
+														<h2 class="h1 gutter-vertical-reset">
+															Some title of article
+															<i class="fa fa-caret-right bp-hide link-arrow"></i>
+														</h2>
+													</header>
+												</a>        
+											</article>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div></div>
+					</article>
 				</div>
-				<!-- *****BOOTSTRAP***** -->
-				<div id="rest" class="tab-pane fade">
-					<h3>Bootstrap</h3>
-					<p>Some content in menu 2.</p>
+
+				<div class="article-footer">
+					<div class="row">
+						<div class="gutter-vertical text-tiny col-md-8 col-md-offset-2 bottom-tags">
+							<a class="tag-link" href="#">#hashtag</a>
+							<a class="tag-link" href="#">#hashtag</a>
+							<a class="tag-link" href="#">#hashtag</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- *****GALLERY***** -->
+			<div id="gallery" class="tab-pane fade">
+				<h3>Galleries</h3>
+
+				<div id="horizontal" class="tab-pane fade">
+					<h3>Horizontal gallery</h3>
+				</div>
+
+				<div id="horizontal1" class="tab-pane fade">
+					<h3>Horizontal gallery 1</h3>
+				</div>
+
+				<div id="vertical" class="dropdown">
+					<h3>Vertical gallery</h3>
+					<div class="segment gallery-vertical gallery-vertical" data-init="gallery-vertical" data-js="page-content">
+
+						<div class="gallery-header">
+							<header class="col-md-12 gutter-top">
+
+								<h1 class="h1 gutter-top gutter-bottom content-header">
+									5 vanvittigt nemme ting, du kan gøre for at skåne miljøet i din hverdag
+								</h1>
+								<h2 class="h4 bold-text gutter-reset content-subheader">
+									Der er også lidt penge at spare ved det. WIN!
+								</h2>
+
+								<div class="gutter-top">
+									<div class="meta-information">
+										18. april 2016 af Redaktionen
+										<span data-content-author="Redaktionen" data-content-date="18. april 2016" data-meta-information="true"></span>
+										<div class="top-tags">
+											<a class="tag-link" href="#">#Hashtag</a>
+											<a class="tag-link" href="#">#Hashtags</a>
+										</div>
+										<div class="inline-block hidden-xs-sm pull-right comment-count"></div>
+									</div>
+								</div>
+
+							</header>
+						</div>
+
+						<nav class="gallery-navigation">
+							<div class="col-xs-5">
+								<h3 data-gallery-counter class="gutter-top-reset"></h3>
+							</div>
+
+							<div class="col-xs-2">
+								<a href="#" class="left pointer" data-gallery-nav data-direction="left" rel="prev">
+									<i class="fa fa-arrow-left"></i>
+								</a>
+								<a href="#" class="right pointer" data-gallery-nav data-direction="right" rel="next">
+									<i class="fa fa-arrow-right"></i>
+								</a>
+							</div>
+
+							<div class="col-xs-5 text-right gallery-thumbs-btn">
+								<a href="#gallery-thumbs" data-toggle="collapse">
+									<i class="fa fa-th"></i>
+								</a>
+							</div>
+
+							<div id="gallery-thumbs" class="gallery-thumbs collapse" data-gallery-thumbs>
+								<ul>
+								</ul>
+							</div>
+						</nav>
+
+						<section class="gallery-section-wrapper">
+							<a href="#" class="gallery-arrow-left" data-gallery-nav data-direction="left" rel="prev">
+								<i class="fa fa-angle-left"></i>
+							</a>
+
+							<a href="#" class="gallery-arrow-right" data-gallery-nav data-direction="right" rel="next">
+								<i class="fa fa-angle-right"></i>
+							</a>
+
+							<ul class="gallery-slides" data-gallery-slides>
+								<li data-thumb-url="http://bonnier.imgix.net/miljo-woman-dk-FltWGXqaG3FLLewhvFzSnQ.jpg?fit=crop&amp;h=65&amp;w=65" data-active-slide="true" style="display: inline-block;">
+									<div class="gallery-slide-number col-xs-12">
+										1 af 5
+									</div>
+									<figure>
+										<div class="gallery-image">
+											<img alt="1. Brug en drikkedunk" class="pointer max-full-width aspect-original imgix-fluid" data-image-lg="http://bonnier.imgix.net/miljo-woman-dk-FltWGXqaG3FLLewhvFzSnQ.jpg?auto=format" data-src="http://bonnier.imgix.net/miljo-woman-dk-FltWGXqaG3FLLewhvFzSnQ.jpg?auto=format" data-toggle="modal-image" src="http://bonnier.imgix.net/miljo-woman-dk-FltWGXqaG3FLLewhvFzSnQ.jpg?auto=format&ixjsv=1.0.24&w=610" title="1. Brug en drikkedunk" />
+										</div>
+										<figcaption>
+											<div class="image-copyright">
+												©iStock
+											</div>
+										</figcaption>
+									</figure>
+									<article>
+										<div class="gallery-article-inner">
+											<h3>
+												1. Brug en drikkedunk
+											</h3>
+											<div class="wysiwyg">
+												<p>Tag en dunk med på farten i stedet for at k&oslash;be nye flasker hver gang, så skåner du naturen for en hel del CO2. Husk at k&oslash;re den gennem opvaskeren med j&aelig;vne mellemrum.</p>
+												<p><a href="http://woman.dk/dit-liv/laes-hvad-der-skete-da-jeg-droppede-kager-og-slik-til-fordel-for-90-liter-vand">L&aelig;s ogs&aring;, hvordan det gik, da Womans digitale redakt&oslash;r Marianne udfordrede sig selv til at skifte slik og kager ud med 90 liter vand</a></p>
+
+												<div class="gallery-copyright-inline">
+													<div class="image-copyright">
+														©iStock
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</article>
+								</li>
+
+								<li data-thumb-url="http://bonnier.imgix.net/gron5-RiFA6EF_46ABzR_OynsIHw.jpg?fit=crop&amp;h=65&amp;w=65" data-active-slide="false" style="display: none;">
+									<div class="gallery-slide-number col-xs-12">
+										2 af 5
+									</div>
+									<figure>
+										<div class="gallery-image">
+											<img alt="2. Køb kun sæsonens frugt og grønt" class="pointer max-full-width aspect-original imgix-fluid" data-image-lg="http://bonnier.imgix.net/gron5-RiFA6EF_46ABzR_OynsIHw.jpg" data-src="http://bonnier.imgix.net/gron5-RiFA6EF_46ABzR_OynsIHw.jpg?auto=format&ixjsv=1.0.24&w=610" data-toggle="modal-image" src="http://bonnier.imgix.net/gron5-RiFA6EF_46ABzR_OynsIHw.jpg?auto=format&ixjsv=1.0.24&w=610" title="2. Køb kun sæsonens frugt og grønt" />
+										</div>
+										<figcaption>
+											<div class="image-copyright">
+												©iStock
+											</div>
+										</figcaption>
+									</figure>
+									<article>
+										<div class="gallery-article-inner">
+											<h3>
+												2. Køb kun sæsonens frugt og grønt
+											</h3>
+											<div class="wysiwyg">
+												<div class="page" title="Page 1">
+													<div class="section">
+														<div class="layoutArea">
+															<div class="column">
+																<p>Og k&oslash;b&nbsp;det gerne lokalt &ndash; så bidrager du ikke til, at appelsiner bliver k&oslash;rt hele vejen fra Spanien uden for s&aelig;sonen. På den måde får du også meget friskere og saftigere frugt og gr&oslash;nt.</p>
+																<p><a href="http://woman.dk/dit-liv/woman-tester-kan-du-leve-en-uge-for-100-kroner">L&AElig;S OGS&Aring;&nbsp;Woman tester: Kan du leve en uge for kun 100 kroner?</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="gallery-related-single">
+													<a href="/mode/sadan-bliver-dit-klaedeskab-miljorigtigt">
+														<strong>LÆS OGSÅ </strong> Sådan bliver dit klædeskab miljørigtigt
+													</a>
+												</div>
+
+												<div class="gallery-copyright-inline">
+													<div class="image-copyright">
+														©iStock
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</article>
+								</li>
+
+								<li data-thumb-url="http://bonnier.imgix.net/gron4-woman-dk-H9QYHDNWvppC43cgfHlYHQ.jpg?fit=crop&amp;h=65&amp;w=65" data-active-slide="false" style="display: none;">
+									<div class="gallery-slide-number col-xs-12">
+										3 af 5
+									</div>
+									<figure>
+										<div class="gallery-image">
+											<img alt="3. Spar på vandet" class="pointer max-full-width aspect-original imgix-fluid" data-image-lg="http://bonnier.imgix.net/gron4-woman-dk-H9QYHDNWvppC43cgfHlYHQ.jpg?auto=format&ixjsv=1.0.24&w=610" data-src="http://bonnier.imgix.net/gron4-woman-dk-H9QYHDNWvppC43cgfHlYHQ.jpg?auto=format&ixjsv=1.0.24&w=610" data-toggle="modal-image" src="http://bonnier.imgix.net/gron4-woman-dk-H9QYHDNWvppC43cgfHlYHQ.jpg?auto=format&ixjsv=1.0.24&w=610" title="3. Spar på vandet" />
+										</div>
+										<figcaption>
+											<div class="image-copyright">
+												©iStock
+											</div>
+
+										</figcaption>
+									</figure>
+									<article>
+										<div class="gallery-article-inner">
+											<h3>
+												3. Spar på vandet
+											</h3>
+											<div class="wysiwyg">
+												<div class="page" title="Page 2">
+													<div class="section">
+														<div class="layoutArea">
+															<div class="column">
+																<p>Start kun vaskemaskinen, når tromlen er fuld, og sk&aelig;r et par minutter af dit bad. Selv små besparelser batter &ndash; og giver ekstra kroner i lommen til dig.</p>
+																<p><a href="http://woman.dk/dit-liv/de-her-ting-i-din-garderobe-vasker-du-sikkert-helt-helt-forkert">L&AElig;S OGS&Aring;&nbsp;De her ting i din garderobe vasker du sikkert helt, helt forkert</a>&nbsp;</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="gallery-related-single">
+													<a href="/skon/ga-den-gronne-vej-miljo-venlig-hudpleje">
+														<strong>LÆS OGSÅ </strong> Gå den grønne vej: Miljø-venlig hudpleje
+													</a>
+												</div>
+
+												<div class="gallery-copyright-inline">
+													<div class="image-copyright">
+														©iStock
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</article>
+								</li>
+
+								<li class="full-width" data-active-slide="true">
+									<div class="gallery-banner" data-gallery-banner>
+										<p class="continue-reading-gallery">
+											<em>Galleriet fortsætter efter annoncen</em>
+										</p>
+										<div class="banner visible-md-lg" data-banner-md-lg>
+											<div class="banner-min-height banner gtm-banner" data-banner-code="37212" data-banner-target="true"></div>
+										</div>
+										<div class="banner visible-sm" data-banner-sm>
+											<div class="banner-min-height banner gtm-banner" data-banner-code="37227" data-banner-target="true"></div>
+										</div>
+										<div class="banner visible-xs" data-banner-xs>
+											<div class="banner-min-height banner gtm-banner" data-banner-code="37197" data-banner-target="true"></div>
+
+										</div>
+									</div>
+								</li>
+								<li data-thumb-url="http://bonnier.imgix.net/gron2-woman-dk-n5u6PcbD-DXyz2g6fDOx4Q.jpg?fit=crop&amp;h=65&amp;w=65" data-active-slide="false" style="display: none;">
+									<div class="gallery-slide-number col-xs-12">
+										4 af 5
+									</div>
+									<figure>
+										<div class="gallery-image">
+											<img alt="4. Meld reklamer og gratisaviser fra" class="pointer max-full-width aspect-original imgix-fluid" data-image-lg="http://bonnier.imgix.net/gron2-woman-dk-n5u6PcbD-DXyz2g6fDOx4Q.jpg" data-src="http://bonnier.imgix.net/gron2-woman-dk-n5u6PcbD-DXyz2g6fDOx4Q.jpg?auto=format&ixjsv=1.0.24&w=610" data-toggle="modal-image" src="http://bonnier.imgix.net/gron2-woman-dk-n5u6PcbD-DXyz2g6fDOx4Q.jpg?auto=format&ixjsv=1.0.24&w=610" title="4. Meld reklamer og gratisaviser fra" />
+										</div>
+										<figcaption>
+											<div class="image-copyright">
+												©iStock
+											</div>
+										</figcaption>
+									</figure>
+									<article>
+										<div class="gallery-article-inner">
+											<h3>
+												4. Meld reklamer og gratisaviser fra
+											</h3>
+											<div class="wysiwyg">
+												<div class="page" title="Page 3">
+													<div class="section">
+														<div class="layoutArea">
+															<div class="column">
+																<p>Hvis du alligevel ikke l&aelig;ser dem, kan du frabede dig at få dem og dermed sk&aelig;re ned på papirspild og i stedet l&aelig;se tilbudsaviserne på butikkernes hjemmesider.</p>
+																<p><a href="http://woman.dk/dit-liv/5-apps-der-hjaelper-med-at-spare-penge-i-hverdagen">L&AElig;S OGS&Aring;&nbsp;5 apps, der hj&aelig;lper med at spare penge i hverdagen</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="gallery-related-single">
+													<a href="/dit-liv/de-bedste-sparetips-til-din-hverdag">
+														<strong>LÆS OGSÅ </strong> De bedste sparetips til din hverdag 
+													</a>
+												</div>
+
+												<div class="gallery-copyright-inline">
+													<div class="image-copyright">
+														©iStock
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</article>
+								</li>
+
+								<li data-thumb-url="http://bonnier.imgix.net/gron1-woman-dk-__KhPIVjn4nZ2BVSnNKdgA.jpg?fit=crop&amp;h=65&amp;w=65" data-active-slide="false" style="display: none;">
+									<div class="gallery-slide-number col-xs-12">
+										5 af 5
+									</div>
+									<figure>
+										<div class="gallery-image">
+											<img alt="5. Brug et indkøbsnet" class="pointer max-full-width aspect-original imgix-fluid" data-image-lg="http://bonnier.imgix.net/gron1-woman-dk-__KhPIVjn4nZ2BVSnNKdgA.jpg?auto=format&ixjsv=1.0.24&w=610" data-src="http://bonnier.imgix.net/gron1-woman-dk-__KhPIVjn4nZ2BVSnNKdgA.jpg?auto=format&ixjsv=1.0.24&w=610" data-toggle="modal-image" src="http://bonnier.imgix.net/gron1-woman-dk-__KhPIVjn4nZ2BVSnNKdgA.jpg?auto=format&ixjsv=1.0.24&w=610" title="5. Brug et indkøbsnet" />
+										</div>
+										<figcaption>
+											<div class="image-copyright">
+												©iStock
+											</div>
+										</figcaption>
+									</figure>
+
+									<article>
+										<div class="gallery-article-inner">
+											<h3>
+												5. Brug et indkøbsnet
+											</h3>
+											<div class="wysiwyg">
+												<div class="page" title="Page 4">
+													<div class="section">
+														<div class="layoutArea">
+															<div class="column">
+																<p>Plasticposer forurener, og det kan hurtigt blive til mange, hvis du k&oslash;ber en, hver gang du handler. K&oslash;b i stedet et sejt stofnet.</p>
+																<p><a href="http://woman.dk/opskrifter/opskrift-kikaertesalat">L&AElig;S OGS&Aring; F&aring; inspiration til de k&oslash;dfrie dage &ndash; bonus for b&aring;de milj&oslash; og pengepung</a></p>
+																<p><em>Artiklen er tidligere bragt i magasinet Woman.</em></p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="gallery-related-single">
+													<a href="/dit-liv/derfor-skal-du-overveje-at-skrue-ned-for-din-indre-ordkloever">
+														<strong>LÆS OGSÅ </strong> Derfor skal du overveje at skrue ned for din indre ordkløver
+													</a>
+												</div>
+
+												<div class="gallery-copyright-inline">
+													<div class="image-copyright">
+														©iStock
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</article>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- *****BOOTSTRAP***** -->
+			<div id="rest" class="tab-pane fade">
+				<h3>Bootstrap</h3>
 
 		<!--Facebook comments integration.
 		<div class="fb-comments" data-href="http://woman.dk/dit-liv/pernille-fik-livmoderhalskraeft-jeg-ville-oenske-jeg-var-blevet-vaccineret" data-numposts="5"></div>-->
