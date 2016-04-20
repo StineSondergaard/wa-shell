@@ -12,9 +12,9 @@ var router = 	new Router();
 
 // Read the wa site settings file
 var whitealbum = JSON.parse(require('fs').readFileSync('sites.json', 'utf8'));
-//var token = JSON.parse(require('fs').readFileSync('token.json', 'utf8'));
+var token = JSON.parse(require('fs').readFileSync('token.json', 'utf8'));
 //For Heroku:
-var token = process.env.TOKEN;
+//var token = process.env.TOKEN;
 var demoHTML = require('fs').readFileSync('demo.html', 'utf8');
 
 /**
@@ -50,20 +50,18 @@ var t = {
 		router.addRoute('/shell/:site/:lang/:banner', t.checkShell);	//accept shortcode and country + 
 		router.addRoute('/*', t.welcome);						//all other urls display default list
 		
-		var port = process.env.PORT || 8080;
-		//var host = process.env.HOST || 'localhost'; //Change to specific IP if you need to test on mobile devices
+		var port = process.env.PORT || 80;
+		var ip = process.env.HOST || '127.0.0.1'; //Change to specific IP if you need to test on mobile devices
 		
 		http.createServer(function (req, res) {
 			var path = url.parse(req.url).pathname;
 			var match = router.match(path);
 			match.fn(req, res, match);
 		}).listen({
+			host: ip,
 			port: port
-		}, function(e){
-			console.log('e: ' + e);
-			//console.log(`Server running on http://${host}:${port}/`);
 		});
-		
+		console.log(`Server running on http://${ip}:${port}/`);
 		
 		//open('http://' + ip + ':' + port + '/');
 	},
@@ -110,10 +108,13 @@ var t = {
 		res.end(html);
 	},
 	welcome: function(req, res, next){
-		var html = `<h1>White Album sites with shell enabled</h1><br><h2>With banners:</h2><ul>`;		
+		var html = `<h1>White Album sites with shell enabled</h1><br>`;
+
+		html += `<table border="1"><tr><th>Site name</th><th>With banners</th><th>Without banners</th></tr><tr>`;
+
 		for(var s = 0; s < whitealbum.sites.length; s++){
 			
-			html += `<li>${whitealbum.sites[s].name}:`;
+			html += `<td>${whitealbum.sites[s].name}</td><td>`;
 			for(var l = 0; l < whitealbum.sites[s].languages.length; l++){
 				if (whitealbum.sites[s].languages[l] == "DK") {
 				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/false"><img 
@@ -136,12 +137,8 @@ var t = {
 				src="http://trapp.whitealbum.dk/images/flags/netherlands-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
 				}
 			}
-			html += `</li>`
-		}
-		html += `</ul><br><h2>Without banners:</h2><ul>`
-		for(var s = 0; s < whitealbum.sites.length; s++){
-			
-			html += `<li>${whitealbum.sites[s].name}:`;
+			html += `</td><td>`;
+	
 			for(var l = 0; l < whitealbum.sites[s].languages.length; l++){
 				if (whitealbum.sites[s].languages[l] == "DK") {
 				html += `<a href="/shell/${whitealbum.sites[s].shortname.toLowerCase()}/${whitealbum.sites[s].languages[l].toLowerCase()}/true"><img 
@@ -164,9 +161,8 @@ var t = {
 				src="http://trapp.whitealbum.dk/images/flags/netherlands-s.png" style="width:20px;border:0;" hspace="5" align="top"></a>`
 				}
 			}
-			html += `</li>`
+			html += `</td></tr>`;
 		}
-		html += `</ul>`
 		res.statuCode = 200;
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
 		res.end(html);
@@ -206,7 +202,7 @@ var t = {
 		var options = {
             url: apiUrl,
 			method: 'GET',
-			headers: { "Authorization": token },
+			headers: { "Authorization": token.basic },
 			qs: { "without_banners": banner },
             json: true
         };
