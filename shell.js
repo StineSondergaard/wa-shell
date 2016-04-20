@@ -12,9 +12,9 @@ var router = 	new Router();
 
 // Read the wa site settings file
 var whitealbum = JSON.parse(require('fs').readFileSync('sites.json', 'utf8'));
-var token = JSON.parse(require('fs').readFileSync('token.json', 'utf8'));
+//var token = JSON.parse(require('fs').readFileSync('token.json', 'utf8'));
 //For Heroku:
-//var token = process.env.TOKEN;
+var token = process.env.TOKEN;
 var demoHTML = require('fs').readFileSync('demo.html', 'utf8');
 
 /**
@@ -50,18 +50,20 @@ var t = {
 		router.addRoute('/shell/:site/:lang/:banner', t.checkShell);	//accept shortcode and country + 
 		router.addRoute('/*', t.welcome);						//all other urls display default list
 		
-		var port = process.env.PORT || 80;
-		var ip = process.env.HOST || '127.0.0.1'; //Change to specific IP if you need to test on mobile devices
+		var port = process.env.PORT || 8080;
+		//var host = process.env.HOST || 'localhost'; //Change to specific IP if you need to test on mobile devices
 		
 		http.createServer(function (req, res) {
 			var path = url.parse(req.url).pathname;
 			var match = router.match(path);
 			match.fn(req, res, match);
 		}).listen({
-			host: ip,
 			port: port
+		}, function(e){
+			console.log('e: ' + e);
+			//console.log(`Server running on http://${host}:${port}/`);
 		});
-		console.log(`Server running on http://${ip}:${port}/`);
+		
 		
 		//open('http://' + ip + ':' + port + '/');
 	},
@@ -202,7 +204,7 @@ var t = {
 		var options = {
             url: apiUrl,
 			method: 'GET',
-			headers: { "Authorization": token.basic },
+			headers: { "Authorization": token },
 			qs: { "without_banners": banner },
             json: true
         };
