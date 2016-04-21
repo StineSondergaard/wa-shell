@@ -82,14 +82,14 @@
 		{
 			"name": "Komputer for alle - Staging",
 			"shortname": "KOM",
-			"languages": ["DK","NO","FI","SE"],
-			"domains": ["staging.komputer.dk","staging.komputer.no","staging.kotimikro.fi","staging.pctidningen.se"]
+			"languages": ["DK","NO","SE","FI"],
+			"domains": ["staging.komputer.dk","staging.komputer.no","staging.pctidningen.se","staging.kotimikro.fi"]
 		},
 		{
 			"name": "Digital Foto - Staging",
 			"shortname": "DIF",
-			"languages": ["DK","NO","FI","SE"],
-			"domains": ["staging.digitalfoto.dk","staging.digital-foto.no","staging.digi-kuva.fi","staging.digitalfotoforalla.se"]
+			"languages": ["DK","NO","SE","FI"],
+			"domains": ["staging.digitalfoto.dk","staging.digital-foto.no","staging.digitalfotoforalla.se","staging.digi-kuva.fi"]
 		},
 		{
 			"name": "Aktiv træning - Staging",
