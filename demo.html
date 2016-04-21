@@ -1,35 +1,27 @@
 <div class="content-wrapper container" role="main">
 
-<!--<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>-->
+	<!--<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>-->
 	<div class="container">
-		<ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#wg">Widget groups</a></li>
-			<li><a data-toggle="tab" href="#widgets">Widgets</a></li>
-			<li><a data-toggle="tab" href="#styles">Styles</a></li>
-			<li><a data-toggle="tab" href="#article">Article</a></li>
+		<ul class="nav navbar-nav gutter-reset">
+			<li class="active"><a data-toggle="tab" href="#wg" title="Widget Groups">Widget groups</a></li>
+			<li><a data-toggle="tab" href="#widgets" title="Widgets">Widgets</a></li>
+			<li><a data-toggle="tab" href="#styles" title="Styles">Styles</a></li>
+			<li><a data-toggle="tab" href="#article" title="Article">Article</a></li>
 			<li><a data-toggle="tab" href="#gallery">Gallery</a></li>
-			<!--<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a data-toggle="tab" href="#">Horizontal</a></li>
-					<li><a data-toggle="tab" href="#">Horizontal 1</a></li>
-					<li><a data-toggle="tab" href="#vertical">Vertical</a></li> 
-				</ul>
-			</li>-->
-			<li><a data-toggle="tab" href="#rest">Bootstrap</a></li>
+			<li><a data-toggle="tab" href="#rest" title="Bootstrap">Bootstrap</a></li>
 		</ul>
 	</div>
 
 	<div class="tab-content">
 
-		<!-- *****WIDGET GROUPS AND WIDGETS***** -->
+		<!-- *****WIDGET GROUPS***** -->
 		<div id="wg" class="tab-pane fade in active">
 			<div class="page-header">
 				<h1>Widget groups:</h1>
@@ -60,10 +52,12 @@
 
 			<h2>wg-editorial stick-to-next</h2>
 			<div class= "widget wg-editorial stick-to-next">
+				<h3>Title of first editorial</h3>
 				<p>This is an editorial widget group that sticks to...</p>
 			</div>
 
 			<div class="widget wg-editorial">
+				<h3>Title of second editorial</h3>
 				<p>... the next editorial widget group.</p>
 			</div>
 		</div>
@@ -72,6 +66,7 @@
 		<div id="widgets" class="tab-pane fade">
 			<h1>Widgets</h1>
 
+			<!-- Rotator -->
 			<h3>Editorial - rotator</h3>
 			<div class="widget wg-editorial"><div class="row">
 				<div class="col-sm-12">
@@ -197,7 +192,7 @@
 			</div></div>
 
 			<br>
-
+			<!-- Newsletter, article, list -->
 			<h3>Themebox - newsletter, article, list</h3>
 			<div class="container">
 				<div class="widget-title row">
@@ -325,6 +320,7 @@
 
 				<br>
 
+				<!-- Newsletter, article, list -->
 				<h3>Editorial - newsletter, article, list</h3>
 				<div class="container">
 					<div class="widget-title row">
@@ -450,6 +446,80 @@
 						</div>
 					</div>
 				</div>
+
+				<br>
+
+
+				<!-- Big with two small-->
+				<h3>Editorial - large article and two small - advertorial</h3>
+				<div class="widget wg-editorial"><div class="row">
+					<div class="col-sm-8">
+						<div class="standard mobile-rows">
+							<article class="article-item full-width">
+								<a class="full-width inline-block" data-transition-link="true" href="#" title="Konkurrence: Vis os, hvordan du fortolker det mørke efterårslook">
+									<div class="relative">
+										<div class="content-label-widget">
+											<div class="content-label">
+												Annonce
+											</div>
+										</div>
+										<img alt="" class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/frbcwomanny-E3x-7IwbIM_AtVlylo1G4Q.jpg?auto=format&amp;rect=0%2C0%2C960%2C665" src="http://bonnier.imgix.net/frbcwomanny-E3x-7IwbIM_AtVlylo1G4Q.jpg?auto=format&amp;rect=0%2C0%2C960%2C665" title="" />
+									</div>
+
+									<header class="article-description">
+										<h2 class="h1 gutter-vertical-reset">
+											Neque porro quisquam est!
+											<i class="fa fa-caret-right bp-hide link-arrow"></i>
+										</h2>
+										<p class="text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										</p>
+									</header>
+								</a>  
+							</article>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-sm-4">
+						<div class="standard mobile-rows">
+							<article class="article-item full-width">
+								<a class="full-width inline-block" data-transition-link="true" href="#" title="“Skal jeg kæmpe videre eller give slip?“">
+									<div class="relative">
+										<div class="content-label-widget"></div>
+										<img alt="" class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/fire-DoZZKiXQG-doz_5fkez2ag.jpg?auto=format&amp;rect=0%2C2%2C3466%2C2399" src="http://bonnier.imgix.net/fire-DoZZKiXQG-doz_5fkez2ag.jpg?auto=format&amp;rect=0%2C2%2C3466%2C2399" title="" />
+									</div>
+									<header class="article-description">
+										<h2 class="h1 gutter-vertical-reset">
+											“But I must explain to you how all this mistaken idea...“
+											<i class="fa fa-caret-right bp-hide link-arrow"></i>
+										</h2>
+									</header>
+								</a>  
+							</article>
+						</div>
+						<div class="standard mobile-rows">
+							<article class="article-item full-width">
+								<a class="full-width inline-block" data-transition-link="true" href="#" title="Kom til åbningsfest i Frb.C - de giver chokolader med præmielodder">
+									<div class="relative">
+										<div class="content-label-widget">
+											<div class="content-label">
+												Annonce
+											</div>
+										</div>
+										<img alt="" class="block full-width aspect-tv imgix-fluid" data-src="http://bonnier.imgix.net/2015/3/13/113356644/frdig-jpg?auto=format&amp;rect=0%2C0%2C960%2C665" src="http://bonnier.imgix.net/2015/3/13/113356644/frdig-jpg?auto=format&amp;rect=0%2C0%2C960%2C665" title="" />
+									</div>
+									<header class="article-description">
+										<h2 class="h1 gutter-vertical-reset">
+											Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+											<i class="fa fa-caret-right bp-hide link-arrow"></i>
+										</h2>
+									</header>
+								</a>  
+							</article>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div></div>
 			</div>
 
 			<!-- *****STYLES***** -->	
@@ -1041,441 +1111,441 @@
 			<div id="rest" class="tab-pane fade">
 				<h3>Bootstrap</h3>
 
-		<!--Facebook comments integration.
-		<div class="fb-comments" data-href="http://woman.dk/dit-liv/pernille-fik-livmoderhalskraeft-jeg-ville-oenske-jeg-var-blevet-vaccineret" data-numposts="5"></div>-->
+			<!--Facebook comments integration.
+			<div class="fb-comments" data-href="http://woman.dk/dit-liv/pernille-fik-livmoderhalskraeft-jeg-ville-oenske-jeg-var-blevet-vaccineret" data-numposts="5"></div>-->
 
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Tables</h1>
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Tables</h1>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@TwBootstrap</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td colspan="2">Larry the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<table class="table table-condensed">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td colspan="2">Larry the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Username</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
+			
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Thumbnails</h1>
 				</div>
-				<div class="col-md-6">
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Username</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
 			</div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Username</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="2">1</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@TwBootstrap</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td colspan="2">Larry the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Badges</h1>
 				</div>
-				<div class="col-md-6">
-					<table class="table table-condensed">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Username</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td colspan="2">Larry the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-		
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Thumbnails</h1>
-			</div>
-			<img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Badges</h1>
-			</div>
-			<p>
-				<a href="#">Inbox <span class="badge">42</span></a>
-			</p>
-			<ul class="nav nav-pills" role="tablist">
-				<li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
-				<li role="presentation"><a href="#">Profile</a></li>
-				<li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
-			</ul>
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Dropdown menus</h1>
-			</div>
-			<div class="dropdown theme-dropdown clearfix">
-				<a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li class="active"><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
+				<p>
+					<a href="#">Inbox <span class="badge">42</span></a>
+				</p>
+				<ul class="nav nav-pills" role="tablist">
+					<li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+					<li role="presentation"><a href="#">Profile</a></li>
+					<li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
 				</ul>
 			</div>
-		</div>
 
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Navs</h1>
-			</div>
-			<ul class="nav nav-tabs" role="tablist">
-				<li role="presentation" class="active"><a href="#">Home</a></li>
-				<li role="presentation"><a href="#">Profile</a></li>
-				<li role="presentation"><a href="#">Messages</a></li>
-			</ul>
-			<ul class="nav nav-pills" role="tablist">
-				<li role="presentation" class="active"><a href="#">Home</a></li>
-				<li role="presentation"><a href="#">Profile</a></li>
-				<li role="presentation"><a href="#">Messages</a></li>
-			</ul>
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Navbars</h1>
-			</div>
-			<nav class="navbar navbar-default">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Project name</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li class="dropdown-header">Nav header</li>
-									<li><a href="#">Separated link</a></li>
-									<li><a href="#">One more separated link</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Dropdown menus</h1>
 				</div>
-			</nav>
-
-			<nav class="navbar navbar-inverse">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Project name</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li class="dropdown-header">Nav header</li>
-									<li><a href="#">Separated link</a></li>
-									<li><a href="#">One more separated link</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</nav>
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Alerts</h1>
-			</div>
-			<div class="alert alert-success" role="alert">
-				<strong>Well done!</strong> You successfully read this important alert message.
-			</div>
-			<div class="alert alert-info" role="alert">
-				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-			</div>
-			<div class="alert alert-warning" role="alert">
-				<strong>Warning!</strong> Best check yo self, you're not looking too good.
-			</div>
-			<div class="alert alert-danger" role="alert">
-				<strong>Oh snap!</strong> Change a few things up and try submitting again.
-			</div>
-		</div>
-
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>List groups</h1>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<ul class="list-group">
-						<li class="list-group-item">Cras justo odio</li>
-						<li class="list-group-item">Dapibus ac facilisis in</li>
-						<li class="list-group-item">Morbi leo risus</li>
-						<li class="list-group-item">Porta ac consectetur ac</li>
-						<li class="list-group-item">Vestibulum at eros</li>
+				<div class="dropdown theme-dropdown clearfix">
+					<a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li class="active"><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
 					</ul>
-				</div><!-- /.col-sm-4 -->
-				<div class="col-sm-4">
-					<div class="list-group">
-						<a href="#" class="list-group-item active">
-							Cras justo odio
-						</a>
-						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-						<a href="#" class="list-group-item">Morbi leo risus</a>
-						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
-						<a href="#" class="list-group-item">Vestibulum at eros</a>
-					</div>
-				</div><!-- /.col-sm-4 -->
-				<div class="col-sm-4">
-					<div class="list-group">
-						<a href="#" class="list-group-item active">
-							<h4 class="list-group-item-heading">List group item heading</h4>
-							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">List group item heading</h4>
-							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">List group item heading</h4>
-							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-						</a>
-					</div>
-				</div><!-- /.col-sm-4 -->
-			</div>
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Panels</h1>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-				</div><!-- /.col-sm-4 -->
-				<div class="col-sm-4">
-					<div class="panel panel-success">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-					<div class="panel panel-info">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-				</div><!-- /.col-sm-4 -->
-				<div class="col-sm-4">
-					<div class="panel panel-warning">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-					<div class="panel panel-danger">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
-						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-				</div><!-- /.col-sm-4 -->
-			</div>
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Wells</h1>
-			</div>
-			<div class="well">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-			</div>
-		</div>
-
-		<div class="widget wg-editorial">
-			<div class="page-header">
-				<h1>Carousel</h1>
-			</div>
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
-					</div>
-					<div class="item">
-						<img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
-					</div>
-					<div class="item">
-						<img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
-					</div>
 				</div>
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
 			</div>
-		</div>
 
-	</div> <!-- /container -->
-</div>
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Navs</h1>
+				</div>
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">Profile</a></li>
+					<li role="presentation"><a href="#">Messages</a></li>
+				</ul>
+				<ul class="nav nav-pills" role="tablist">
+					<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">Profile</a></li>
+					<li role="presentation"><a href="#">Messages</a></li>
+				</ul>
+			</div>
+
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Navbars</h1>
+				</div>
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Project name</a>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!--/.nav-collapse -->
+					</div>
+				</nav>
+
+				<nav class="navbar navbar-inverse">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Project name</a>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!--/.nav-collapse -->
+					</div>
+				</nav>
+			</div>
+
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Alerts</h1>
+				</div>
+				<div class="alert alert-success" role="alert">
+					<strong>Well done!</strong> You successfully read this important alert message.
+				</div>
+				<div class="alert alert-info" role="alert">
+					<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+				</div>
+				<div class="alert alert-warning" role="alert">
+					<strong>Warning!</strong> Best check yo self, you're not looking too good.
+				</div>
+				<div class="alert alert-danger" role="alert">
+					<strong>Oh snap!</strong> Change a few things up and try submitting again.
+				</div>
+			</div>
+
+
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>List groups</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<ul class="list-group">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div><!-- /.col-sm-4 -->
+					<div class="col-sm-4">
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								Cras justo odio
+							</a>
+							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item">Morbi leo risus</a>
+							<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+							<a href="#" class="list-group-item">Vestibulum at eros</a>
+						</div>
+					</div><!-- /.col-sm-4 -->
+					<div class="col-sm-4">
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								<h4 class="list-group-item-heading">List group item heading</h4>
+								<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+							</a>
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">List group item heading</h4>
+								<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+							</a>
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">List group item heading</h4>
+								<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+							</a>
+						</div>
+					</div><!-- /.col-sm-4 -->
+				</div>
+			</div>
+
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Panels</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Panel title</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Panel title</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+					</div><!-- /.col-sm-4 -->
+					<div class="col-sm-4">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title">Panel title</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Panel title</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+					</div><!-- /.col-sm-4 -->
+					<div class="col-sm-4">
+						<div class="panel panel-warning">
+							<div class="panel-heading">
+								<h3 class="panel-title">Panel title</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<h3 class="panel-title">Panel title</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+					</div><!-- /.col-sm-4 -->
+				</div>
+			</div>
+
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Wells</h1>
+				</div>
+				<div class="well">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+				</div>
+			</div>
+
+			<div class="widget wg-editorial">
+				<div class="page-header">
+					<h1>Carousel</h1>
+				</div>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+						</div>
+						<div class="item">
+							<img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
+						</div>
+						<div class="item">
+							<img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div> <!--Bootstrap-->
+
+	</div> <!--Tab content-->
 </div>
