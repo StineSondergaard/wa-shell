@@ -22,8 +22,8 @@
 		{
 			"name": "Stylista",
 			"shortname": "STY",
-			"languages": ["DK"],
-			"domains": ["stylista.dk"]
+			"languages": ["DK","NO"],
+			"domains": ["stylista.dk","beta.stylista.no"]
 		},
 		{
 			"name": "Bolig Pluss",
